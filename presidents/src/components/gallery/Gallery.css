@@ -1,0 +1,29 @@
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    justify-items: center;
+}
+  
+.gallery-image-card {
+    border: 3px solid #ddd;
+    padding: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease-in-out;
+}
+  
+.gallery-image-card:hover {
+    transform: scale(1.05); 
+}
+  
+.gallery-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover; 
+}
+  
+.gallery-label {
+    text-align: center;
+    margin-top: 10px;
+}
+  
