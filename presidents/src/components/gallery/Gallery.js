@@ -19,17 +19,17 @@ const images = [
     { alt: 'Harry S. Thurman',  src: '../images/harry-thurman.jpeg'}
 ];
 
-function Gallery() {
-  return (
-    <div className="gallery-container">
-      {images.map((image, index) => (
-        <div key={index} className="gallery-image-card">
-          <img src={image.src} alt={image.alt} className="gallery-image" />
-          <p className="gallery-label">{image.alt}</p>
-        </div>
-      ))}
-    </div>
-  );
-}
-
-export default Gallery;
+function Gallery({ onSelect }) {
+    return (
+      <div className="gallery-container">
+        {images.map((image, index) => (
+          <div key={index} className="gallery-image-card" onClick={() => onSelect(image)}>
+            <img src={image.src} alt={image.alt} className="gallery-image" />
+            <p className="gallery-label">{image.alt}</p>
+          </div>
+        ))}
+      </div>
+    );
+  }
+  
+  export default Gallery;
