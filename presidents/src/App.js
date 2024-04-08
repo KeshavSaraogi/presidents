@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
+import './App.css'
 import Gallery from '../src/components/gallery/Gallery';
-import Portrait from '../src/components/potrait/Potrait';
+import Portrait from './components/portrait/Portrait';
 
 function App() {
   const [selectedPresident, setSelectedPresident] = useState(null);
