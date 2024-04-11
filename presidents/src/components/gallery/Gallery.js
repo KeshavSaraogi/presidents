@@ -29,9 +29,17 @@ function Gallery({ onSelect }) {
   return (
     <div className="gallery-container">
       {images.map((image, index) => (
-        <div key={index} className="gallery-image-card" onClick={() => handleImageClick(image.alt)}>
-          <img src={image.src} alt={image.alt} className="gallery-image" />
-          <p className="gallery-label">{image.alt}</p>
+        <div  key={index} 
+              className="gallery-image-card" 
+              onClick={() => handleImageClick(image.alt)}
+        >
+          <img  src={image.src} 
+                alt={image.alt} 
+                className="gallery-image" 
+          />
+          <p  className="gallery-label">
+              {image.alt}
+          </p>
         </div>
       ))}
     </div>

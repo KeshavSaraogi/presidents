@@ -7,7 +7,8 @@ function Portrait({ data, onGoBack }) {
       <h1>{data.name}</h1>
       <img 
         className="portraitImage" 
-        src={data.image} alt={data.name}/>
+        src={data.image} alt={data.name}
+      />
         
       <p>Years of Presidency: {data.yearsOfPresidency}</p>
       <p>Hometown: {data.hometown}</p>

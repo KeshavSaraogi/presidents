@@ -18,9 +18,14 @@ function App() {
     <div>
       <h1>PRESIDENTS GALLERY</h1>
       {selectedPresident ? (
-        <Portrait data={selectedPresident} onGoBack={handleGoBack} />
+        <Portrait 
+          data={selectedPresident} 
+          onGoBack={handleGoBack}
+        />
       ) : (
-        <Gallery onSelect={handleSelectPresident} />
+        <Gallery 
+          onSelect={handleSelectPresident} 
+        />
       )}
     </div>
   );
