@@ -5,7 +5,6 @@ import peopleData from '../../data/PresidentData'
 const images = [
     { alt: 'John Adams',        src: '../images/john-adams.jpeg'},
     { alt: 'Chester Arthur',    src: '../images/chester-arthur.jpeg' },
-    { alt: 'Unidentified Man',   src: '../images/unidentified-man.jpeg'},
     { alt: 'John Tyler',        src: '../images/john-tyler.jpeg'},
     { alt: 'Andrew Johnson',    src: '../images/andrew-johnson.jpeg' },
     { alt: 'Lydon Johnson',     src: '../images/lydon-johnson.jpeg'},

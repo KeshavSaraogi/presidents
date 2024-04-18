@@ -1,10 +1,33 @@
 .portraitContainer {
-    text-align: center;
-  }
-  
-.portraitImage {
-    width: 300px;
-    height: 300px;
-    object-fit: contain;
+    width: 60%;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
-  
+
+.portraitImage {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 20px;
+}
+/* Responsive styles for screens smaller than 768px */
+@media (max-width: 768px) {
+    /* Larger width for smaller screens */
+    .portraitContainer {
+        width: 80%;
+        padding: 10px;
+    }
+}
+
+/* Responsiveness styles for screens smaller than 480px */
+@media (max-width: 480px) {
+    .portraitContainer {
+        width: 95%;
+        padding: 5px;
+    }
+
+    .portraitImage {
+        margin-bottom: 10px;
+    }
+}
